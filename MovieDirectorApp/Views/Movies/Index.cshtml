@@ -1,0 +1,33 @@
+﻿@model IEnumerable<MovieDirectorApp.Models.Movie>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<p class="sectionheading">Movie Index</p>
+
+<p class="moviedetailbutton2">
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="row moviecontainer">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6 col-md-4 ">
+            <div class="thumbnail moviethumb">
+                <div class="caption">
+                    <p class="movietitle">@Html.DisplayFor(modelItem => item.Title)</p>
+                    <p>@Html.DisplayNameFor(model => model.Director.Name):@Html.DisplayFor(modelItem => item.Director.Name)</p>
+                    <p>@Html.DisplayNameFor(model => model.Genre.Type):@Html.DisplayFor(modelItem => item.Genre.Type)</p>
+                    <p>@Html.DisplayNameFor(model => model.Title):@Html.DisplayFor(modelItem => item.Title)</p>
+                    <p>@Html.DisplayNameFor(model => model.ReleaseDate):@Html.DisplayFor(modelItem => item.ReleaseDate)</p>
+                    <p>@Html.DisplayNameFor(model => model.RTScore):@Html.DisplayFor(modelItem => item.RTScore)</p>
+                    <p>@Html.DisplayNameFor(model => model.Rating):@Html.DisplayFor(modelItem => item.Rating)</p>
+                    <p>@Html.DisplayNameFor(model => model.WonAward):@Html.DisplayFor(modelItem => item.WonAward)</p>
+                    <p class="moviedetailbutton">@Html.ActionLink("Edit", "Edit", new { id = item.MovieID }) | @Html.ActionLink("Details", "Details", new { id = item.MovieID }) | @Html.ActionLink("Delete", "Delete", new { id = item.MovieID })</p>
+                </div>
+            </div>
+        </div>
+    }
+    </div>
+
+

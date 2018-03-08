@@ -1,0 +1,35 @@
+﻿@model IEnumerable<MovieDirectorApp.Models.Director>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<p class="sectionheading">Director Index</p>
+
+<button class="createbutton moviedetailbutton2">
+    @Html.ActionLink("Create New", "Create")
+</button>
+<div class="table directortable">
+    <dd>
+       <br />A list of directors in our database
+    </dd>
+</div>
+
+
+@foreach (var item in Model) {
+    <div class="row directordetails">
+        <dd>
+            <p>@Html.DisplayFor(modelItem => item.Name)</p>
+        </dd>
+        <dt>
+            <p class="moviedetailbutton">
+                @Html.ActionLink("Edit", "Edit", new { id = item.DirectorID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.DirectorID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.DirectorID })
+            </p>
+        </dt>
+    </div>
+    
+}
+
+

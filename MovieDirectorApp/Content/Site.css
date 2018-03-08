@@ -1,0 +1,136 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url('images/film-movie-motion-picture-390089.jpeg');
+    background-size: cover;
+}
+.navbar {
+    font-family: 'Anton', sans-serif;
+    color: #fff!important;
+}
+.container {
+    /*color:gold!important;*/
+}
+a.navbar-brand {
+    color:gold!important;
+}
+
+.maintitle {
+    font-family: 'Anton', sans-serif;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+    
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.footer {
+    text-align: center;
+}
+.genretable {
+    /*background-image: url('images/lodocvyvuuwwhmhqynug.png');
+    background-size: contain;*/
+    /*font-family: 'Anton', sans-serif;*/
+    color: black;
+}
+.genretable.tbody {
+    background-color: black!important;
+   
+}
+.sectionheading {
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+
+}
+.createbutton {
+    align-content:center;
+    
+   
+}
+.movietitle {
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    color: black!important;
+    font-style:normal;
+}
+.caption{
+    color: black!important;
+    font-style: oblique;
+}
+.moviecontainer {
+    background-image: url('images/maxresdefault.jpg');
+    background-size: cover;
+    opacity: 1.0;
+    padding-top: 30px;
+}
+.moviethumb {
+    background-color: gold!important;
+    border:none;
+}
+.moviedetail {
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    background-image: url('images/pexels-photo-274937.jpeg');
+    background-size: cover;
+}
+.moviebackground {
+    background-color: gold!important;
+    opacity: .9
+}
+.moviedetailbutton {
+    background-color: gold !important;
+    color: black !important;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    font-style:oblique;
+    border-color: black !important;
+    border: groove;
+    width: 200px;
+    text-align: center;
+    font-weight: normal!important;
+}
+    .moviedetailbutton a {
+        color: black !important;
+        
+    }
+.moviedetailbutton2 {
+    background-color: gold !important;
+    color: black !important;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    font-style: oblique;
+    border-color: black !important;
+    border: groove;
+    width: 130px;
+    text-align: center;
+}
+.moviedetailbutton2 a {
+    color: black!important;
+    
+}
+.directortable {
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+   
+}
+.directordetails {
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    
+
+}
